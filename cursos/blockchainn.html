@@ -2,80 +2,82 @@
 <html class="no-js" lang="">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Desarrollo Blockchain</title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
-
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
-
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
-</head>
-<title>Conquerblocks</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Desarrollo Blockchain</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <meta name="description" content="">
+  
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="">
+  
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon.png">
+  
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#fafafa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  
+  </head>
 <body>
-  <header>
-    
-    <img src="../img/conquerlogo.avif" alt="600">
-    <nav>
-        <ul>
-            <li><a href="./../home.html">Home</a></li>  
-            <li><a href="./../quienes.html">Quienes somos</a></li>
-            <li><a href="./../cursos.html">Cursos</a></li>
-            <li><a href="./../blog.html">Blog</a></li>
-            <li><a href="./../registros.html">Registro</a></li>
-            <li><a href="./../login.html">Login</a></li>
-            <li><a href="./../contacto.html">Contacto</a></li>
-        </ul>
-       </nav>
-    <hr>
-  </header>
-  <main>
+    <header>
+        <nav class="nav-bar">
+          <a href="home.html"><img src="../img/conquerlogo.avif" alt="logo" class="logo"></a>
+          <label class="label-hamburguesa" for="menu-hamburguesa"><i class="bi bi-list"></i></label>
+          <input type="checkbox" id="menu-hamburguesa">
+       
+          <ul class="list">
+            <li><a href="../home.html">Home</a></li>  
+            <li><a href="../quienes.html">Quienes somos</a></li>
+            <li><a href="../cursos.html">Cursos</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="../registros.html">Registro</a></li>
+            <li><a href="../login.html">Login</a></li>
+            <li><a href="../contacto.html">Contacto</a></li>
+          </ul>
+         </nav>
+    </header>
+  <main class="full">
     <section>
     <article>    <h1>Máster en Desarrollo
         Blockchain de Conquer Blocks</h1>
         <img src="../img/DesarrolloBlockchain.avif" alt="">
-        <br>
     <strong>El Máster en Desarrollo Blockchain que arrasa en el mercado... </strong>
     <p>La formación donde aprenderás todo lo que necesitas para convertirte en programador especializado en tecnología Blockchain, <strong>y multiplicar tu valor y salario en el mercado laboral.</strong></p>
     </section>
-    <section>
+    
         <h2>Profesorado del Máster</h2>
         <strong>Fórmate con profesionales de la élite del desarrollo con amplia experiencia en el mercado laboral</strong>
-        <br>
-
-    
+      <div>
     <article>
             <img src="../img/javiermarcos.avif" alt="foto de javier marcos" width="200" height="200">
-            <br>
-            <strong>Javier Marcos</strong>
-            <p>Desarrollador y Experto en Ciberseguridad</p>
+          
+            <h3>Javier Marcos</h3>
+            <p class="ali">Desarrollador y Experto en Ciberseguridad</p>
         <p>Tras haber trabajado en empresas como AirBNB, Uber y Facebook, actualmente es uno de los cargos más importantes de Chainlink.</p>    
         </article>
         <article>
             <img src="../img/bienve2.avif" alt="bienvenido saez" width="200" height="200">
-            <br>
-            <strong>Bienvenido Saez</strong>
+          
+            <h3>Bienvenido Saez</h3>
            <p>Ingeniero Informático</p>
             <P>Bienvenido cuenta con más de 15 años de experiencia en el mundo de la educación en el sector tecnológico. En el máster de Inteligencia Artificial es mentor de los módulos de Linux y la Terminal y Git.</P>
         </article>
         <article>
             <img src="../img/angelgonzalez.avif" alt="foto de angel gonzalez " width="200" height="200">
-            <br>
-            <strong>Ángel González Garrido</strong>
+    
+            <h3>Ángel González Garrido</h3>
             <p>Ingeniero de software     </p>
             <p>Graduado en Ingeniería Robótica por la UMA, ha trabajado para Avanade, IBM y Banco Santander. Tras su etapa en consultoría, quiso sumergirse en el universo de las startups, co-fundando dos empresas en España y EE. UU.</p>
         </article>
-    </section>
+        </div>
 
     <section>
     </article>
@@ -124,9 +126,20 @@
     
   </main>
   <footer>
-    <br>
+    <img src="../img/logo-footer.svg" alt="">
+    <div class="redes">
+      <h2>Redes sociales</h2>
+      <div>
+          <a href="https://www.instagram.com/conquerblocks/?hl=es"> <i class="bi bi-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UCY6ncOO-7C107IR3E63EDBw"><i class="bi bi-youtube"></i></a>
+
+          <a href="https://x.com/ConquerBlocks"><i class="bi bi-twitter-x"></i></a>
+
+          <a href="https://www.linkedin.com/company/conquer-x/mycompany/"><i class="bi bi-linkedin"></i></a>
+          </div>
+      </div>
     <p>Copyright © 2025  By ConquerX  </p>
-    <p><a href="../aviso_legal.html">Aviso Legal</a></p>
+    <p><a href="">Aviso Legal</a></p>
   </footer>
 
 </body>

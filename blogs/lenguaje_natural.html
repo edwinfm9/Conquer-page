@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lenguaje Natural</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/main.css">
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -20,30 +20,38 @@
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
 </head>
-<title>Conquerblocks</title>
 <body>
   <header>
-    
-    <img src="../img/conquerlogo.avif" alt="600">
-    <nav>
-     <ul>
-      <li><a href="../home.html">Home</a></li>  
-      <li><a href="../quienes.html">Quienes somos</a></li>
-      <li><a href="../cursos.html">Cursos</a></li>
-      <li><a href="../blog.html">Blog</a></li>
-      <li><a href="../registros.html">Registro</a></li>
-      <li><a href="../login.html">Login</a></li>
-      <li><a href="../contacto.html">Contacto</a></li>
-     </ul>
-    </nav>
-    <hr>
+    <nav class="nav-bar">
+      <a href="home.html"><img src="../img/conquerlogo.avif" alt="logo" class="logo"></a>
+      <label class="label-hamburguesa" for="menu-hamburguesa"><i class="bi bi-list"></i></label>
+      <input type="checkbox" id="menu-hamburguesa">
+   
+      <ul class="list">
+        <li><a href="../home.html">Home</a></li>  
+        <li><a href="../quienes.html">Quienes somos</a></li>
+        <li><a href="../cursos.html">Cursos</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../registros.html">Registro</a></li>
+        <li><a href="../login.html">Login</a></li>
+        <li><a href="../contacto.html">Contacto</a></li>
+      </ul>
+     </nav>
   </header>
-  <main>
+  <main class="blogs">
     <h1>Lenguaje Natural y Programación: ¿Cómo lo Entienden las Máquinas?</h1>
-    <section>
-        <img src="../img/bienve2.avif" alt="" width="40" height="40"> <strong>Bienvenido Saez</strong><br>
-        <iframe width="800" height="500" src="https://www.youtube.com/embed/piF6AHfkaDo" title="¿Es Posible Programar Sin Código? Todo sobre el Lenguaje Natural" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   
+      <div class="autor">
+        <img src="../img/bienve2.avif" alt="" width="40px" height="40px" id="autor">
+         <h3>Bienvenido Saez</h3>
+        </div>
+        <iframe width="350px" height="400px" src="https://www.youtube.com/embed/piF6AHfkaDo" title="¿Es Posible Programar Sin Código? Todo sobre el Lenguaje Natural" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <p>Cuando escuchamos el término "lenguaje natural", pensamos en el idioma que usamos a diario: español, inglés, francés, etc. Sin embargo, en el mundo de la tecnología y la programación, este concepto tiene un significado mucho más profundo. ¿Cómo logran las máquinas entender nuestro lenguaje y responder de manera coherente? En este artículo, exploraremos qué es el lenguaje natural, cómo se procesa en programación y por qué es clave en el desarrollo tecnológico.</p>
 
         <h2>¿Qué es el lenguaje natural?</h2>
@@ -86,13 +94,24 @@
 
         <p>En Conquer Blocks creemos en la importancia de la educación tecnológica. Si quieres seguir aprendiendo sobre estos y otros conceptos clave, ¡síguenos y forma parte de nuestra comunidad de aprendizaje!</p>
 
-    </section>
+    
 
   </main>
   <footer>
-    <hr>
+    <img src="../img/logo-footer.svg" alt="">
+    <div class="redes">
+      <h2>Redes sociales</h2>
+      <div>
+          <a href="https://www.instagram.com/conquerblocks/?hl=es"> <i class="bi bi-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UCY6ncOO-7C107IR3E63EDBw"><i class="bi bi-youtube"></i></a>
+
+          <a href="https://x.com/ConquerBlocks"><i class="bi bi-twitter-x"></i></a>
+
+          <a href="https://www.linkedin.com/company/conquer-x/mycompany/"><i class="bi bi-linkedin"></i></a>
+          </div>
+      </div>
     <p>Copyright © 2025  By ConquerX  </p>
-    <p><a href="../aviso_legal.html">Aviso Legal</a></p>
+    <p><a href="">Aviso Legal</a></p>
   </footer>
 
 </body>

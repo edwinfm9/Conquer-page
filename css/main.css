@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to left, #DEF857, #5BC7EC);
+}
+
+header {
+  height: 88px;
+}
+header .nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  position: relative;
+}
+header img {
+  display: block;
+}
+header .logo {
+  width: 200px;
+}
+header i {
+  font-size: 30px;
+}
+header ul {
+  width: 100%;
+  position: absolute;
+  top: 88px;
+  height: 0;
+  background-image: linear-gradient(to left, #5BC7EC, #DEF857);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  gap: 5px;
+  transition: all 0.3s;
+}
+header li {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+}
+header a {
+  text-decoration: none;
+  color: #242424;
+  font-weight: 500;
+}
+header #menu-hamburguesa {
+  display: none;
+}
+header #menu-hamburguesa:checked + ul {
+  height: 220px;
+}
+
+main {
+  padding: 10px;
+}
+main img:first-of-type {
+  width: 100%;
+  height: 250px;
+}
+main h1 {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+main a {
+  text-decoration: underline;
+  color: white;
+  text-decoration-color: #DEF857;
+  margin-bottom: 20px;
+}
+main p {
+  color: #454545;
+  margin-bottom: 20px;
+  font-weight: 200;
+}
+main .cursos, main .noticias {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .cursos h2.home, main .cursos h2, main .noticias h2.home, main .noticias h2 {
+  text-align: center;
+  font-size: 35px;
+}
+main .cursos a, main .noticias a {
+  color: #242424;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 500;
+}
+main .cursos a.mas, main .noticias a.mas {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: #DEF857;
+  text-decoration-thickness: 4px;
+}
+main .cursos article:last-of-type, main .noticias article:last-of-type {
+  margin-bottom: 20px;
+}
+main .cursos article, main .noticias article {
+  border: 1px solid black;
+  padding: 10px;
+}
+main .registros {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+main .contacto {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+main.quienes h1 {
+  font-weight: 700;
+}
+main.quienes h2 {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 35px;
+}
+main.quienes div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main.quienes article {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+main.cursos h1 {
+  font-weight: 700;
+}
+main.cursos section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main.cursos article {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+main.blog h1 {
+  font-weight: 700;
+}
+main.blog a {
+  color: black;
+  text-decoration: none;
+}
+main.blog section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main.blog article {
+  border: 1px solid black;
+  padding: 10px;
+}
+main.blog article h3 {
+  line-height: 22px;
+}
+
+.ali, .pp {
+  text-align: center;
+}
+
+main.registros h2 {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+main.registros form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: auto;
+}
+main.registros label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+main.registros input[type=text],
+main.registros input[type=email],
+main.registros input[type=date],
+main.registros input[type=url],
+main.registros input[type=file],
+main.registros input[type=password],
+main.registros textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+}
+main.registros textarea {
+  resize: vertical;
+}
+main.registros button {
+  border-radius: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+main.registros button:hover {
+  background-color: black;
+  color: white;
+}
+
+main.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+main.contacto form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: auto;
+}
+main.contacto label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+main.contacto input[type=email],
+main.contacto input[type=text],
+main.contacto input[type=password],
+main.contacto textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+}
+main.contacto button {
+  border-radius: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+main.contacto button:hover {
+  background-color: black;
+  color: white;
+}
+
+main.full h1 {
+  font-weight: 700;
+  font-size: 24px;
+}
+main.full div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main.full div article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 10px;
+}
+main.full div article h3 + p {
+  font-weight: 400;
+  color: #242424;
+}
+main.full div article:last-of-type {
+  margin-bottom: 30px;
+}
+
+main.blogs h1 {
+  margin-bottom: 40px;
+}
+main.blogs .autor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+main.blogs .autor img:first-of-type {
+  width: 60px;
+  height: 60px;
+}
+main.blogs #cuadrado {
+  border-radius: 30px;
+}
+main.blogs .listt {
+  padding: 10px;
+}
+main.blogs img {
+  width: 350px;
+  height: 200px;
+  margin: 30px 0;
+}
+main.blogs p {
+  font-weight: 300;
+}
+
+div.redes {
+  display: flex;
+  flex-direction: column;
+}
+div.redes div {
+  display: flex;
+  gap: 10px;
+  margin-left: -16px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: #242424;
+  margin-top: 50px;
+}
+footer h2 {
+  color: white;
+}
+footer img {
+  width: 130px;
+  margin-left: 20px;
+}
+footer p {
+  color: white;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */

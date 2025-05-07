@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -20,14 +20,21 @@
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
 </head>
 
 <body>
   <header>
-    
-    <img src="./img/conquerlogo.avif" alt="600">
-    <nav>
-        <ul>
+      <nav class="nav-bar">
+        <a href="home.html"><img src="./img/conquerlogo.avif" alt="logo" class="logo"></a>
+        <label class="label-hamburguesa" for="menu-hamburguesa"><i class="bi bi-list"></i></label>
+        <input type="checkbox" id="menu-hamburguesa">
+     
+        <ul class="list">
           <li><a href="./home.html">Home</a></li>  
           <li><a href="./quienes.html">Quienes somos</a></li>
           <li><a href="./cursos.html">Cursos</a></li>
@@ -37,56 +44,67 @@
           <li><a href="./contacto.html">Contacto</a></li>
         </ul>
        </nav>
-    <hr>
   </header>
-  <main>
-    <img src="./img/conquerdo.png" alt="Conquerblocks" width="1200" height="560">
-    <p>Transforma tu futuro profesional con la escuela líder en la enseñanza de nuevas profesiones tecnológicas</h1>
+  <hr>
+  <main class="home">
+    <img src="./img/conquerdo.png" alt="Conquerblocks" >
+    <h1>Transforma tu futuro profesional con la escuela líder en la enseñanza de nuevas profesiones tecnológicas</h1>
     <section>
     <h2><a href="quienes.html">Quienes somos</a></h2>
     <article>
     <p>Conquer Blocks es la mayor academia de programación en habla hispana, y la que cuenta con mayores garantías de empleo. Aquí podrás aprender sobre Desarrollo Full-Stack, Desarrollo Blockchain, Inteligencia Artificial y Ciberseguridad.</p>
     </article>
     </section>
-    <section>
-        <h2>Cursos</h2>
+    <section class="cursos">
+        <h2 class="home">Cursos</h2>
         <article>
-            <ul>
+          
                 <img src="./img/artificial.avif" alt="Mujer usando una laptop" width="300" height="">
-                <li><a href="./cursos/inteligencia_artificial.html">Máster en Desarrollo de Inteligencia Artificial</a></li>
-                Aprende a desarrollar en la tecnología emergente que más rápido crece de la historia.
-                    Modalidad para programadores especializándose
-                    Modalidad para personas sin conocimientos previos
+                <a href="./cursos/inteligencia_artificial.html">Máster en Desarrollo de Inteligencia Artificial</a>
+                  <p>Aprende a desarrollar en la tecnología emergente que más rápido crece de la historia.
+                Modalidad para programadores especializándose
+                Modalidad para personas sin conocimientos previos
+                  </p>
+        </article>          
+        <article>  
                   <img src="./img/ciberseguridad.avif" alt="chema alonso" width="300" height="">
-                <li><a href="./cursos/ciberseguridad.html">Máster en Ciberseguridad</a></li>
-                Descubre como asegurar la privacidad y protección de datos
-                    Master diseñado por Chema Alonso
-                    Creado por los mejores Hackers y expertos en Ciberseguridad del mundo.
-                <li><a href="./cursos.html">Otros Cursos</a></li>
-            </ul>
+                <a href="./cursos/ciberseguridad.html">Máster en Ciberseguridad</a>
+                 <p>Descubre como asegurar la privacidad y protección de datos
+                  Master diseñado por Chema Alonso
+                  Creado por los mejores Hackers y expertos en Ciberseguridad del mundo.
+                  </p>
+                <a class="mas" href="./cursos.html">Otros Cursos</a>
+            
         </article>
     </section>
-    <section>
+    <section class="noticias">
         <h2>Noticias</h2>
         <article>
-            <ul>
-                <img src="./img/blog1.jpg" alt="bienvenido con laptop" height="300" width="500">
-                <li><a href="./blogs/lenguaje_natural.html">Lenguaje Natural y Programación: ¿Cómo lo Entienden las Máquinas?</a></li>
-                El lenguaje natural es el conjunto de idiomas que utilizamos los humanos para comunicarnos. A diferencia de los lenguajes de programación, que son
+                <img src="./img/blog1.jpg" alt="bienvenido con laptop" >
+                <a href="./blogs/lenguaje_natural.html">Lenguaje Natural y Programación: ¿Cómo lo Entienden las Máquinas?</a>
+                 <p>El lenguaje natural es el conjunto de idiomas que utilizamos los humanos para comunicarnos. A diferencia de los lenguajes de programación
+                </p>
+        </article>  
+        <article>      
                 <img src="./img/blog2.jpg" alt="bienvenido" >
-                <li><a href="./blogs/bites.html">Bits y Bytes: La Base del Mundo Digital</a></li>
-                Todo lo que hacemos en el mundo digital, desde enviar un mensaje de texto hasta ver un video en alta definición, depende de dos elementos esenciales: los bits y los bytes.
-                <li><a href="./blog.html">Mas noticias</a></li>
-            </ul>
+                <a href="./blogs/bites.html">Bits y Bytes: La Base del Mundo Digital</a>
+                 <p>Todo lo que hacemos en el mundo digital, desde enviar un mensaje de texto hasta ver un video en alta definición, depende de dos elementos esenciales: los bits y los bytes.
+                 </p>
+                <a class="mas" href="./blog.html">Mas noticias</a>
+            
         </article>
     </section>
-    <section>
+    <section class="registros">
+      <div>
       <h2>Registro</h2>
       <a href="./registros.html">Registrate aqui</a>
+      </div>
+      <div>
       <h2>Inicia sesion</h2>
       <a href="./login.html">Inicia sesion aqui</a>
+      </div>
   </section>
-  <section>
+  <section class="contacto">
     <h2>Contacto</h2>
     <a href="./contacto.html">Contacto</a>
   </section>
@@ -95,12 +113,21 @@
 
   </main>
   <footer>
-    <hr>
-    
-    <p>Copyright © 2025  By ConquerX  </p>
-    <p><a href="./aviso_legal.html">Aviso Legal</a></p>
-  </footer>
+    <img src="img/logo-footer.svg" alt="">
+    <div class="redes">
+      <h2>Redes sociales</h2>
+      <div>
+          <a href="https://www.instagram.com/conquerblocks/?hl=es"> <i class="bi bi-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UCY6ncOO-7C107IR3E63EDBw"><i class="bi bi-youtube"></i></a>
 
+          <a href="https://x.com/ConquerBlocks"><i class="bi bi-twitter-x"></i></a>
+
+          <a href="https://www.linkedin.com/company/conquer-x/mycompany/"><i class="bi bi-linkedin"></i></a>
+          </div>
+      </div>
+    <p>Copyright © 2025  By ConquerX  </p>
+    <p><a href="">Aviso Legal</a></p>
+  </footer>
 </body>
 
 </html>

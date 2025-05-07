@@ -2,60 +2,62 @@
 <html class="no-js" lang="">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Master fullstack</title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
-
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
-
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
-</head>
-<title>Conquerblocks</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Master FullStack</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <meta name="description" content="">
+  
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="">
+  
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon.png">
+  
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#fafafa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  
+  </head>
 <body>
-  <header>
-    
-    <img src="../img/conquerlogo.avif" alt="600">
-    <nav>
-        <ul>
-            <li><a href="./../home.html">Home</a></li>  
-            <li><a href="./../quienes.html">Quienes somos</a></li>
-            <li><a href="./../cursos.html">Cursos</a></li>
-            <li><a href="./../blog.html">Blog</a></li>
-            <li><a href="./../registros.html">Registro</a></li>
-            <li><a href="./../login.html">Login</a></li>
-            <li><a href="./../contacto.html">Contacto</a></li>
-        </ul>
-       </nav>
+    <header>
+        <nav class="nav-bar">
+          <a href="home.html"><img src="../img/conquerlogo.avif" alt="logo" class="logo"></a>
+          <label class="label-hamburguesa" for="menu-hamburguesa"><i class="bi bi-list"></i></label>
+          <input type="checkbox" id="menu-hamburguesa">
+       
+          <ul class="list">
+            <li><a href="../home.html">Home</a></li>  
+            <li><a href="../quienes.html">Quienes somos</a></li>
+            <li><a href="../cursos.html">Cursos</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="../registros.html">Registro</a></li>
+            <li><a href="../login.html">Login</a></li>
+            <li><a href="../contacto.html">Contacto</a></li>
+          </ul>
+         </nav>
+    </header>
     <hr>
-  </header>
-  <main>
-    <article>    <h1>MASTER EN DESARROLLO 
+  <main class="full" >
+    <h1>MASTER EN DESARROLLO 
         WEB FULL STACK DE CONQUER BLOCKS</h1>
         <img src="../img/Full-Stack-Conquer-Blocks.avif" alt="">
-        <br>
     <strong>El Máster en Desarrollo Full Stack que te garantiza un empleo por contrato... </strong>
     <p>La formación donde aprenderás todo lo que necesitas para convertirte en Desarrollador Full-Stack, aunque partas desde cero en el mundo de la programación.</p>
     <section>
-        <h2>Profesorado del Máster</h2>
-        <strong>Fórmate con profesionales de la élite del desarrollo con amplia experiencia en el mercado laboral</strong>
-        <br>
-
-    
-    <article>
+    <h2>Profesorado del Máster</h2>
+    <strong>Fórmate con profesionales de la élite del desarrollo con amplia experiencia en el mercado laboral</strong>
+    <div>
+        <article>
             <img src="../img/bienve2.avif" alt="foto de Bienvenido Saez" width="200" height="200">
-            <br>
-            <strong>Bienvenido Saez</strong>
+            <h3>Bienvenido Saez</h3>
             <p>Programador especializado
             </p>
         <p>
@@ -63,19 +65,18 @@
         </article>
         <article>
             <img src="../img/elena_hernandez.avif" alt="foto de elena hernandez" width="200" height="200">
-            <br>
-            <strong>Elena Hernández</strong>
+            <h3>Elena Hernández</h3>
            <p>Doctora en Astrofísica Computacional </p>
             <P>Profesora de Python en el Máster, se ha dedicado a enseñar programación en la Universidad a personas que, como tú, partían de 0, y será la que te enseñe tu primer lenguaje de programación.</P>
         </article>
         <article>
             <img src="../img/carlos_azautre.avif" alt="foto de Carlos Azaustre" width="200" height="200">
-            <br>
-            <strong>Carlos Azaustre</strong>
+            <h3>Carlos Azaustre</h3>
             <p>Ingeniero telemático</p>
             <p>Está reconocido por Google desde 2019 como Developer Expert GDE en Tecnologías web y premiado en 2022 y 2023 como Microsoft MVP (Most Valuable Professional)</p>
         </article>
-    </section>
+        </div>
+
     <section>
     </article>
     <h2>Metodologia de estudio</h2>
@@ -125,9 +126,20 @@
     
   </main>
   <footer>
-    <br>
+    <img src="../img/logo-footer.svg" alt="">
+    <div class="redes">
+      <h2>Redes sociales</h2>
+      <div>
+          <a href="https://www.instagram.com/conquerblocks/?hl=es"> <i class="bi bi-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UCY6ncOO-7C107IR3E63EDBw"><i class="bi bi-youtube"></i></a>
+
+          <a href="https://x.com/ConquerBlocks"><i class="bi bi-twitter-x"></i></a>
+
+          <a href="https://www.linkedin.com/company/conquer-x/mycompany/"><i class="bi bi-linkedin"></i></a>
+          </div>
+      </div>
     <p>Copyright © 2025  By ConquerX  </p>
-    <p><a href="../aviso_legal.html">Aviso Legal</a></p>
+    <p><a href="">Aviso Legal</a></p>
   </footer>
 
 </body>
