@@ -65,6 +65,21 @@ header {
     #menu-hamburguesa:checked + ul {
         height: 220px;
     }
+    @include respond-to(tablet) {
+       .logo {
+        width: 400px;
+       }
+       i {
+        font-size: 50px;
+       }
+       a {
+        font-size: 35px;
+       }
+       #menu-hamburguesa:checked + ul {
+        height: 440px;
+        }
+    }
+
     
 }
 
@@ -93,7 +108,10 @@ main {
         margin-bottom: 20px;
         font-weight: 200;
     }
-
+    h2.home {
+        text-align: center;
+        font-size: 35px;
+    }
     .cursos, .noticias {
         display: flex;
         flex-direction: column;
@@ -138,6 +156,51 @@ main {
         text-align: center;
         margin-bottom: 30px;
     }
+    @include respond-to(tablet) {
+        img:first-of-type{
+            height: 400px;
+        }
+        h1 {
+            font-size: 35px;
+            line-height: 45px;
+            font-weight: 800;
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 32px;
+            font-weight: 600;
+            text-align: center;
+        }
+        p {
+            font-size: 22px;
+            text-align: center;
+        }
+        .cursos,
+        .noticias {
+            p {
+                text-align: start;
+            }
+            a,
+            a.mas {
+                font-size: 28px;
+                text-align: start;
+            }
+            
+        }
+        .registros {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+            font-size: 30px;
+            
+        }
+        .contacto {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+        
+    }
 
 
     
@@ -164,6 +227,56 @@ main.quienes {
         padding: 10px;
         
     }
+
+    @include respond-to(tablet) {
+        h1 {
+            font-size: 35px;
+        }
+        h2 {
+            font-size: 25px;
+            font-weight: 500px;
+            text-align: center;
+        }
+        div {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+              "card1 card2"
+              ".     card3";
+            gap: 30px;
+
+            .c1 {
+                grid-area: card1;
+              }
+              
+            .c2 {
+                grid-area: card2;
+              }
+              
+            .c3 {
+                grid-area: card3;
+                grid-column: 1 / span 2; 
+                width: 500px;
+                justify-self: center;  
+              }
+        }
+        article {
+            h3 {
+                text-align: center;
+                font-size: 25px;
+            }
+            em {
+                display: block;
+                text-align: center;
+                font-size: 20px;
+            }
+            p {
+                font-weight: 500;
+            }
+        }
+
+
+    }
 }
 
 main.cursos {
@@ -182,6 +295,25 @@ main.cursos {
         padding: 10px;
         
     }
+    @include respond-to(tablet) {
+        article {
+            padding: 20px;
+        }
+        h3 {
+            font-size: 30px;
+            text-align: center;
+        }
+        p {
+            font-weight: 500;
+        }
+        a {
+            display: block;
+            text-align: center;
+            font-size: 25px;
+        }
+        
+    }
+    
 }
 
 main.blog {
@@ -204,6 +336,26 @@ main.blog {
     h3 {
         line-height: 22px;
     }
+    }
+    @include respond-to(tablet) {
+        article {
+            padding: 20px;
+        
+            h3 {
+            font-size: 30px;
+            text-align: center;
+            line-height: 29px;
+            }
+        }
+        p {
+            font-weight: 500;
+        }
+        a {
+            display: block;
+            text-align: center;
+            font-size: 25px;
+        }
+        
     }
 
 }
@@ -260,6 +412,11 @@ main.registros {
         background-color: black;
         color: white;
     }
+    @include respond-to(tablet) {
+        form{
+            max-width: 555px;
+        }
+    }
 }   
 
 main.contacto {
@@ -302,6 +459,15 @@ main.contacto {
         background-color: black;
         color: white;
     }
+    @include respond-to(tablet) {
+        form {
+            width: 555px;
+        }
+        iframe {
+            width: 555px;
+            height: 400px;
+        }
+    }
 
 }
 
@@ -330,11 +496,54 @@ main.full {
         }
         
     }
+    @include respond-to(tablet) {
+        h1{
+            font-size: 30px;
+        }
+        h3 {
+            font-size: 25px;
+        }
+        p{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        section {
+            h3{
+                text-align: center;
+                
+            }
+    
+        }
+        div {
+            display: grid;
+            grid-template-areas:
+            "card1 card2"
+            ".     card3";
+            padding: 40px 0;
+        }
+        .a1 {
+            grid-area: card1;
+        }
+        .a3 {
+            grid-area: card3;
+            grid-column: 1 / span 2; 
+            justify-self: center;  
+            width: 500px; 
+        }
+        .a2 {
+            grid-area: card2;
+          
+        }
+        p{
+            font-size: 25px;
+        }
+    }
 }
 
 main.blogs {
     h1 {
         margin-bottom: 40px;
+        
     }
 
     .autor {
@@ -363,6 +572,16 @@ main.blogs {
     p {
         font-weight: 300;
     }
+    @include respond-to(tablet) {
+        iframe {
+            width: 775px;
+        }
+        p {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+    }
 }
 
 div.redes {
@@ -371,14 +590,14 @@ div.redes {
     div {
         display: flex;
         gap: 10px;
-        margin-left: -16px;
+        
     }
 }
 
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
+    justify-items: anchor-center;
     align-items: center;
     height: 200px;
     background-color: $black;
@@ -402,6 +621,16 @@ footer {
         font-weight: 500;
         margin-left: 20px;
     }
+
+    @include respond-to(tablet) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: anchor-center;
+    }
+    img {
+        width: 170px;
+    }
+    
 }
 
 
