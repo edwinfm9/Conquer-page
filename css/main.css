@@ -242,6 +242,10 @@ main .contacto {
     text-align: center;
   }
 }
+main a.enlace {
+  color: #242424;
+  text-decoration: none;
+}
 
 main.quienes h1 {
   font-weight: 700;
