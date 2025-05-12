@@ -79,6 +79,33 @@ header {
         height: 440px;
         }
     }
+    @include respond-to(desktop) {
+        margin: 0 10px;
+        .logo {
+            width: 300px;
+        }
+        #menu-hamburguesa,
+        i {
+            display: none;
+        }
+
+        ul {
+            position: static;
+            height: auto;
+            flex-direction: row;
+            width: auto;
+            background: none;
+            overflow: visible;
+            gap: 20px;
+        }
+
+        li {
+            width: auto;
+        }
+    }
+    
+
+    
 
     
 }
@@ -199,7 +226,40 @@ main {
             font-size: 30px;
             margin-bottom: 30px;
         }
+
         
+    }
+    @include respond-to(desktop) {
+        img:first-of-type{
+            height: 450px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2em;
+        }
+        p {
+            font-weight: 600px;
+            text-align: center;
+            font-size: 22px;
+        }
+        .cursos,
+        .noticias {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            align-items: start;
+            margin-bottom: 50px;
+            article {
+                width: 50%;
+                height: 700px;
+                a {
+                    display: inline;
+                    text-align: center;
+                }
+            }
+
+        }
     }
 
 
@@ -277,6 +337,36 @@ main.quienes {
 
 
     }
+    @include respond-to(desktop) {
+        h1 {
+            font-size: 30px;
+        }
+        h2 {
+            font-weight: 700;
+        }
+        div {
+            display: flex;
+            flex-direction: row;
+            article {
+                width: 400px;
+                h3 {
+                text-align: center;
+                font-size: 25px;
+                }
+                em {
+                display: block;
+                text-align: center;
+                font-size: 20px;
+                }
+                p{
+                    font-weight: 500;
+                }
+                img {
+                    border-radius: 70%;
+                }
+            }
+        }
+    }
 }
 
 main.cursos {
@@ -312,6 +402,26 @@ main.cursos {
             font-size: 25px;
         }
         
+    }
+    @include respond-to(desktop) {
+        h1 {
+            font-size: 30px;
+        }
+        section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        article {
+            width: 100%;
+            h3 {
+                text-align: center;
+                font-size: 24px;
+                
+            }
+            p {
+                font-weight: 300;
+            }
+        }
     }
     
 }
@@ -356,6 +466,26 @@ main.blog {
             font-size: 25px;
         }
         
+    }
+    @include respond-to(desktop) {
+        h1 {
+            font-size: 30px;
+        }
+        section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        article {
+            width: 100%;
+            h3 {
+                text-align: center;
+                font-size: 24px;
+                
+            }
+            p {
+                font-weight: 300;
+            }
+        }
     }
 
 }
@@ -468,6 +598,15 @@ main.contacto {
             height: 400px;
         }
     }
+      @include respond-to(desktop) {
+        form {
+            width: 800px;
+        }
+        iframe {
+            width: 800px;
+            height: 400px;
+        }
+    }
 
 }
 
@@ -538,6 +677,32 @@ main.full {
             font-size: 25px;
         }
     }
+    @include respond-to(desktop) {
+         h1{
+            font-size: 30px;
+        }
+        h3 {
+            font-size: 25px;
+            text-align: center;
+        }
+        p{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        img.hero {
+            width: 70%;
+            height: 490px;
+            margin-left: 200px;
+        }
+        div {  
+            display: flex;
+            flex-direction: row;
+            article {
+                width: 35%;
+                height: 800px;
+            }
+        }
+    }
 }
 
 main.blogs {
@@ -574,12 +739,38 @@ main.blogs {
     }
     @include respond-to(tablet) {
         iframe {
-            width: 775px;
+            width: 100%;
         }
         p {
             font-size: 24px;
             font-weight: 500;
             margin-bottom: 30px;
+        }
+        p + img,
+        ul + img {
+            width: 60%;
+            height: 400px;
+            position: relative;
+            left: 185px;
+        }
+    }
+
+    @include respond-to(desktop) {
+       iframe {
+            width: 100%;
+            height: 500px;
+        }
+        p {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        } 
+        p + img,
+        ul + img {
+            width: 60%;
+            height: 400px;
+            position: relative;
+            left: 300px;
         }
     }
 }
@@ -629,6 +820,11 @@ footer {
     }
     img {
         width: 170px;
+    }
+    @include respond-to(desktop) {
+        display: flex;
+        justify-content: space-between;
+        
     }
     
 }
